@@ -6,15 +6,56 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
-
 #wrapper {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
  
+nav { 
+    box-shadow: 0 2px 12px #000;
+    
+    a {
+        text-shadow: 0 1px 1px #fff;
+        
+        i.material-icons {
+           font-size: 45px;
+        }
+    }
+}
+
 #content {
     flex: 1;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .borad {
+            flex-basis: 350px;
+            margin: 20px;
+        }
+        
+    }
+    .card {
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ccc;
+        }
+
+
+        a.price.btn-large.yellow:hover {
+            background: #fff176 !important;
+        }
+        
+    }
 }
 
 footer {
